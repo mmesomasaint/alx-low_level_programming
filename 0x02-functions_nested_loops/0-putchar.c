@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * main - Entry point
- * Description: prints 'putchar \n'
+ * Description: prints '_putchar \n'
  * Return: 0
  */
 int main(void)
 {
-char str[] = "putchar\n";
+char str[] = "_putchar\n";
 int i = 0;
 while (str[i] != '\0')
 {

@@ -38,7 +38,7 @@ minutes_tens++;
 minutes_tens = '0';
 hours_ones++;
 }
-hours_Ones = '0';
+hours_ones = '0';
 hours_tens++;
 }
 }

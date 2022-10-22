@@ -9,24 +9,21 @@
 
 void print_triangle(int size)
 {
-int i = 1, ii;
-while (i <= size && size > 0)
+int height;
+int width;
+int draw;
+
+if (size <= 0)
+_putchar('\n');
+
+for (height = 1; height <= size; height++)
 {
-ii = 0;
-while (ii < size - 1)
-{
+for (width = 1; width <= (size - height); width++)
 _putchar(' ');
-ii++;
-}
-ii = 0;
-while (ii < i)
-{
+
+for (draw = 1; draw <= height; draw++)
 _putchar('#');
-ii++;
-}
+
 _putchar('\n');
-i++;
 }
-if (i == 1)
-_putchar('\n');
 }

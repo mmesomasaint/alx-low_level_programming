@@ -10,29 +10,15 @@
 
 void print_number(int n)
 {
-unsigned int tens, digit, positive = n;
-double t_beg = 1;
+unsigned int x;
 
-if (n == 0)
-_putchar('0');
-else
-{
+x = n;
 if (n < 0)
 {
-positive = n * -1;
-_putchar('-');
+_putchar(45);
+x = -n;
 }
-
-while (t_beg <= positive)
-t_beg *= 10;
-tens = t_beg / 10;
-
-while (tens >= 1)
-{
-digit = positive / tens;
-_putchar(digit + '0');
-positive = (positive - (tens * digit));
-tens /= 10;
-}
-}
+if (x / 10)
+print_number(x / 10);
+_putchar((x % 10) + '0');
 }

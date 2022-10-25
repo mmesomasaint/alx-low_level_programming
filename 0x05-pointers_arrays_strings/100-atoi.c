@@ -99,5 +99,5 @@ num += (s[i] - '0') * t;
 t /= 10;
 }
 
-return (num * sign);
+return (num *sign);
 }

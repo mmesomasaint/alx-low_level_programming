@@ -1,1 +1,1 @@
-The Main Readme
+More about arrays and strings and pointers
